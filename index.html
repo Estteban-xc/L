@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para ti 🌼</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&display=swap');
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #fffdf5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background-image: repeating-linear-gradient(transparent, transparent 39px, #e2d5b8 39px, #e2d5b8 40px);
+    opacity: 0.3;
+    pointer-events: none;
+  }
+  svg {
+    animation: mecer 5s ease-in-out infinite;
+    transform-origin: 170px 440px;
+    filter: drop-shadow(2px 8px 14px rgba(0,0,0,0.09));
+  }
+  @keyframes mecer {
+    0%,100%{transform:rotate(-2deg);}
+    50%{transform:rotate(2deg);}
+  }
+  .msg {
+    font-family: 'Caveat', cursive;
+    font-size: 2.1rem;
+    color: #c0392b;
+    margin-top: 14px;
+    text-align: center;
+    opacity: 0;
+    animation: show 1s ease 0.5s forwards;
+  }
+  @keyframes show { to { opacity:1; } }
+</style>
+</head>
+<body>
+ 
+<svg width="340" height="460" viewBox="0 0 340 460" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <radialGradient id="pg" cx="45%" cy="20%" r="80%">
+    <stop offset="0%" stop-color="#ffffff"/>
+    <stop offset="100%" stop-color="#ede0ea"/>
+  </radialGradient>
+  <radialGradient id="cg" cx="35%" cy="30%" r="75%">
+    <stop offset="0%" stop-color="#ffe566"/>
+    <stop offset="50%" stop-color="#f5c200"/>
+    <stop offset="100%" stop-color="#c98000"/>
+  </radialGradient>
+</defs>
+ 
+<!-- TALLO -->
+<path d="M170 318 Q162 368 165 442" stroke="#4e9444" stroke-width="7.5" fill="none" stroke-linecap="round"/>
+<path d="M170 318 Q162 368 165 442" stroke="#7bc470" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.45"/>
+ 
+<!-- HOJA IZQUIERDA -->
+<path d="M166 372 Q125 342 118 312 Q140 338 166 358 Z" fill="#5baa50" stroke="#3d7a35" stroke-width="1.3"/>
+<path d="M166 372 Q138 345 120 314" stroke="#3d7a35" stroke-width="1" fill="none" opacity="0.4"/>
+ 
+<!-- HOJA DERECHA -->
+<path d="M167 395 Q210 368 220 336 Q202 360 167 380 Z" fill="#5baa50" stroke="#3d7a35" stroke-width="1.3"/>
+<path d="M167 395 Q202 368 220 338" stroke="#3d7a35" stroke-width="1" fill="none" opacity="0.4"/>
+ 
+<!-- PÉTALOS: 12 pétalos bien formados como lágrimas apuntando al centro -->
+ 
+<!-- cada pétalo es un path de forma elíptica rotada alrededor de cx=170 cy=195 -->
+ 
+<!-- 0° arriba -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2" stroke-linejoin="round"/>
+ 
+<!-- 30° -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(30 170 195)"/>
+ 
+<!-- 60° -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(60 170 195)"/>
+ 
+<!-- 90° derecha -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(90 170 195)"/>
+ 
+<!-- 120° -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(120 170 195)"/>
+ 
+<!-- 150° -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(150 170 195)"/>
+ 
+<!-- 180° abajo -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(180 170 195)"/>
+ 
+<!-- 210° -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(210 170 195)"/>
+ 
+<!-- 240° -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(240 170 195)"/>
+ 
+<!-- 270° izquierda -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(270 170 195)"/>
+ 
+<!-- 300° -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(300 170 195)"/>
+ 
+<!-- 330° -->
+<path d="M163 197 Q156 154 162 115 Q170 100 178 115 Q184 154 177 197 Z"
+      fill="url(#pg)" stroke="#cdb0be" stroke-width="1.2"
+      transform="rotate(330 170 195)"/>
+ 
+<!-- CENTRO sombra -->
+<circle cx="172" cy="197" r="46" fill="rgba(0,0,0,0.09)"/>
+<!-- CENTRO -->
+<circle cx="170" cy="195" r="46" fill="url(#cg)"/>
+<circle cx="170" cy="195" r="38" fill="#f0bb00" opacity="0.35"/>
+ 
+<!-- puntitos textura centro -->
+<g fill="#6b3c00" opacity="0.5">
+  <circle cx="170" cy="158" r="2.8"/>
+  <circle cx="188" cy="163" r="2.8"/>
+  <circle cx="201" cy="176" r="2.8"/>
+  <circle cx="206" cy="194" r="2.8"/>
+  <circle cx="200" cy="212" r="2.8"/>
+  <circle cx="185" cy="223" r="2.8"/>
+  <circle cx="167" cy="227" r="2.8"/>
+  <circle cx="150" cy="221" r="2.8"/>
+  <circle cx="139" cy="208" r="2.8"/>
+  <circle cx="136" cy="191" r="2.8"/>
+  <circle cx="143" cy="175" r="2.8"/>
+  <circle cx="157" cy="163" r="2.8"/>
+  <circle cx="170" cy="170" r="2.2"/>
+  <circle cx="182" cy="173" r="2.2"/>
+  <circle cx="191" cy="182" r="2.2"/>
+  <circle cx="193" cy="194" r="2.2"/>
+  <circle cx="188" cy="206" r="2.2"/>
+  <circle cx="178" cy="213" r="2.2"/>
+  <circle cx="166" cy="215" r="2.2"/>
+  <circle cx="155" cy="210" r="2.2"/>
+  <circle cx="148" cy="200" r="2.2"/>
+  <circle cx="149" cy="189" r="2.2"/>
+  <circle cx="155" cy="179" r="2.2"/>
+  <circle cx="165" cy="173" r="2.2"/>
+  <circle cx="170" cy="195" r="3.5"/>
+  <circle cx="176" cy="189" r="1.8"/>
+  <circle cx="164" cy="200" r="1.8"/>
+</g>
+<!-- brillo centro -->
+<ellipse cx="156" cy="181" rx="12" ry="7" fill="rgba(255,255,255,0.4)" transform="rotate(-28 156 181)"/>
+</svg>
+ 
+<div class="msg">Te amo mucho mi niña "L" 💛</div>
+ 
+</body>
+</html>
